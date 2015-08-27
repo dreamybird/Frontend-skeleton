@@ -1,0 +1,14 @@
+{
+  "name": "Frontend-skeleton",
+  "version": "0.0.0",
+  "authors": [
+    "KAS"
+  ],
+  "description": "it is a frontend skeleton exist of bower, gruntjs, bootstrap3, angularjs, ...",
+  "main": "?",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.4",
+    "bootstrap": "~3.3.5"
+  }
+}
