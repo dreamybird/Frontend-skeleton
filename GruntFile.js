@@ -32,6 +32,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				src: [ 
+					'bower_components/angular/angular.js',
 					'src/js/*',
 					'src/js/*/*'
 				],
@@ -53,16 +54,13 @@ module.exports = function (grunt) {
 				},
 				
 				files: {
-					'www-root/css/style.min.css' : [ 'src/css/*.css' ]
+					'www-root/css/style.min.css' : [ 'bower_components/bootstrap/dist/css/bootstrap.min.css', 'src/css/*.css' ]
 				}
 			}
 		},
 
 		less: {
   			development: {
-    			options: {
-      				paths: ["assets/css"]
-    			},
 				files: {
       				"src/css/compiled-style.css": "src/less/style.less"
     			}
