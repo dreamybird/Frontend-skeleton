@@ -54,7 +54,7 @@ module.exports = function (grunt) {
 				},
 				
 				files: {
-					'www-root/css/style.min.css' : [ 'bower_components/bootstrap/dist/css/bootstrap.min.css', 'src/css/*.css' ]
+					'www-root/css/style.min.css' : [ 'bower_components/bootstrap/dist/css/bootstrap.min.css', 'www-root/css/style.css' ]
 				}
 			}
 		},
@@ -62,7 +62,7 @@ module.exports = function (grunt) {
 		less: {
   			development: {
 				files: {
-      				"src/css/compiled-style.css": "src/less/style.less"
+      				"www-root/css/style.css": "src/style/*"
     			}
 			}
 		},
