@@ -9,10 +9,11 @@
 body {
   padding-top: @nav-height;
   background-color: @body-background-color;
+  min-width: 800px;
 }
 
-.container {
-  width: @container-width;  
+.container {  
+  width: @container-width;   
 }
 
 #container-main {
@@ -22,3 +23,28 @@ body {
   background-color: @container-background-color;  
   padding-bottom: @container-padding-bottom;
 }
+
+//
+// it's makes static nav
+//
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+
+.navbar-header {
+  float: left;
+}
+
+.navbar-nav > li {
+  float: left;
+}
+
+.navbar-nav > li > a {
+  padding: 15px;
+}
+
+.navbar-nav.navbar-right {
+  float: right;
+}
+
